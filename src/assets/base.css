@@ -1,0 +1,38 @@
+/* color palette from <https://github.com/vuejs/theme> */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+/* semantic color variables for this project */
+:root {
+  --ao-color-details:#B9FF66;
+  --ao-color-primary:#191A23;
+  --ao-color-secondary:#F3F3F3;
+  --ao-color-white:#FFFFFF;
+
+  --ao-family-text:"Space Grotesk", sans-serif;
+
+  --ao-h1-desktop-size:60px;
+  --ao-h2-desktop-size:40px;
+  --ao-h3-desktop-size:30px;
+  --ao-h4-desktop-size:20px;
+  --ao-desktop-paragraph: 18px;
+
+  --ao-h1-mobile-size:43px;
+  --ao-h2-mobile-size:36px;
+  --ao-h3-mobile-size:26px;
+  --ao-h4-mobile-size:18px;
+  --ao-mobile-paragraph: 16px;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--ao-color-secondary);
+  background: var(--ao-color-white);
+  transition: 0.5s;
+  line-height: 1.6;
+  font-family: var(--ao-family-text) !important;
+  font-size: var(--ao-desktop-paragraph);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+/*   -moz-osx-font-smoothing: grayscale; */
+}
