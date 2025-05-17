@@ -1,51 +1,57 @@
 <template>
-  <div class="py-5 my-4 container testimonial position-relative">
-    <div class="swiper-button-custom-prev">
-      <icon-arrow-left/>
+  <div class="container position-relative">
+    <div class="d-flex flex-column flex-lg-row align-items-center pt-4 pb-5">
+        <h2 class="title rounded me-0 me-sm-5">Testemunhos</h2>
+        <p class="paragraph text-center text-lg-start">Ouça dos nossos clientes satisfeitos: Leia nossos testemunhos para saber mais sobre nossos serviços de Marketing Digital.</p>
     </div>
-    <div class="swiper-button-custom-next">
-      <icon-arrow-right/>
-    </div>
-    <swiper-container
-      navigation-prev-el=".swiper-button-custom-prev"
-      navigation-next-el=".swiper-button-custom-next"
-      :autoplay-delay="2500"
-      :autoplay-disable-on-interaction="false"
-      :space-between="50"
-      :navigation="true"
-      :pagination="true"
-      :loop="true"
-      :breakpoints= "{
-            576: {
-              slidesPerView: 1.2,
-              spaceBetween: 20
+    <div class="testimonial py-5 my-4 ">
+      <swiper-container
+        navigation-prev-el=".swiper-button-custom-prev"
+        navigation-next-el=".swiper-button-custom-next"
+        :autoplay-delay="2500"
+        :autoplay-disable-on-interaction="false"
+        :space-between="50"
+        :navigation="true"
+        :pagination="true"
+        :loop="true"
+        :breakpoints= "{
+              576: {
+                slidesPerView: 1.2,
+                spaceBetween: 20
+                },
+              640: {
+                slidesPerView: 1.2,
+                spaceBetween: 20
               },
-            640: {
-              slidesPerView: 1.2,
-              spaceBetween: 20
-            },
-            768: {
-              slidesPerView: 1.2,
-              spaceBetween: 30
-            },
-            992: {
-              slidesPerView: 2.5,
-            },
-            1200: {
-              slidesPerView: 2.5,
-            }
-            }"
-    >
-    <swiper-slide v-for="testimonial in testimonials" :key="testimonial.id">
-        <div class="card text-white p-4 h-100">
-            <p class="fs-6 fst-italic">"{{ testimonial.text }}"</p>
-            <div class="mt-4">
-        </div>
-        </div>
-        <p class="fw-bold text-white text-center text-sm-start ms-0 ms-sm-5 mb-0 mt-5">{{ testimonial.name }}</p>
-        <p class="text-white text-center text-sm-start ms-0 ms-sm-5" ><small>{{ testimonial.position }}</small></p>
-    </swiper-slide>
-    </swiper-container>
+              768: {
+                slidesPerView: 1.2,
+                spaceBetween: 30
+              },
+              992: {
+                slidesPerView: 2.5,
+              },
+              1200: {
+                slidesPerView: 2.5,
+              }
+              }"
+      >
+      <swiper-slide v-for="testimonial in testimonials" :key="testimonial.id">
+          <div class="card text-white p-4 h-100">
+              <p class="fs-6 fst-italic">"{{ testimonial.text }}"</p>
+              <div class="mt-4">
+          </div>
+          </div>
+          <p class="fw-bold text-white text-center text-sm-start ms-0 ms-sm-5 mb-0 mt-5">{{ testimonial.name }}</p>
+          <p class="text-white text-center text-sm-start ms-0 ms-sm-5" ><small>{{ testimonial.position }}</small></p>
+      </swiper-slide>
+      </swiper-container>
+      <div class="swiper-button-custom-prev">
+        <icon-arrow-left/>
+      </div>
+      <div class="swiper-button-custom-next">
+        <icon-arrow-right/>
+      </div>
+    </div>
   </div>
 </template>
 
