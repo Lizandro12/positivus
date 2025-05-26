@@ -1,6 +1,6 @@
 <template>
     <div class="container py-5">
-        <div class="d-flex flex-column flex-lg-row align-items-center py-5">
+        <div class="d-flex flex-column flex-lg-row align-items-center pt-5 pb-1">
             <h2 class="title rounded me-0 me-sm-5">Serviços</h2>
             <p class="paragraph text-center text-lg-start">Na nossa agência de marketing digital, oferecemos um conjunto de serviços para ajudar negocios a crescerem e terem sucesso online. Estes serviços incluem:</p>
         </div>

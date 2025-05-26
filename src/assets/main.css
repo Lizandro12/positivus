@@ -48,11 +48,13 @@
 
 .card_title-1, .card_title-4, .card_title-6 {
   background-color: var(--ao-color-details);
+  font-size: var(--ao-h3-desktop-size);
 }
 
 
 .card_title-2, .card_title-3, .card_title-5 {
   background-color: var(--ao-color-white);
+  font-size: var(--ao-h3-desktop-size);
 }
 
 .card_1, .card_4 {
@@ -99,6 +101,10 @@
     width: 350px;
 }
 
+.cases_card_text, .card_link_text {
+  font-size: var(--ao-desktop-paragraph);
+}
+
 .cases_swipper_container {
   background-color: var(--ao-color-primary);
   border-radius: 2rem;
@@ -124,13 +130,14 @@
 
 .header_card_info {
     gap: 1rem;
-}
+  }
+
 .header_card_number {
-    font-size: 1.8rem;
+  font-size: var(--ao-h3-desktop-size);
 }
 
 .header_card_title {
-    font-size: 1.25rem;
+    font-size: var(--ao-h3-desktop-size);
 }
 
 .card_icons img {
@@ -157,7 +164,7 @@
 }
 
 .card_body .card_text {
-    font-size: 1.125rem;
+    font-size: var(--ao-desktop-paragraph);
 }
 
 .testimonial {
@@ -199,6 +206,26 @@
   background-repeat: no repeat;
 }
 
+.how-it-works-accordion-title {
+  margin-bottom: 2rem;
+  background-color: #B9FF66;
+  max-width: 300px;
+  border-radius: .5rem;
+  font-size: var(--ao-h2-desktop-size);
+}
+
+.how-it-works-accordion-paragraph {
+  font-size: var(--ao-desktop-paragraph);
+}
+
+  .team_card_title {
+    font-size: var(--ao-h4-desktop-size);
+  }
+
+  .team_card_paragraph {
+    font-size: var(--ao-desktop-paragraph);
+  }
+
 /* BREAKPOINTS */
 @media (max-width: 576px) {
   .hero_title {
@@ -229,15 +256,19 @@
     width: auto;
   }
 
+  .cases_card_text, .card_link_text {
+    font-size: var(--ao-mobile-paragraph);
+  }
+
   .redesign {
     padding: 2rem !important;
   }
   .header_card_number {
-    font-size: 1.5rem;
+    font-size: var(--ao-h3-mobile-size);
   }
 
   .header_card_title {
-      font-size: 1rem;
+    font-size: var(--ao-h4-mobile-size);
   }
 
   .card_icons img {
@@ -248,10 +279,48 @@
       height: 250px;
   }
 
+  .card_body .card_text {
+    font-size: var(--ao-mobile-paragraph);
+  }
   .form_side {
     padding: 2rem 2.5rem !important;
   }
+  
+  .card_title-1, .card_title-4, .card_title-6 {
+    background-color: var(--ao-color-details);
+    font-size: var(--ao-h3-mobile-size);
+  }
 
+
+  .card_title-2, .card_title-3, .card_title-5 {
+    background-color: var(--ao-color-white);
+    font-size: var(--ao-h3-mobile-size);
+  }
+
+  .redesign_title {
+    font-size: var(--ao-h3-mobile-size);
+  }
+
+  .redesign_paragraph {
+    font-size: var(--ao-mobile-paragraph);
+  }
+
+  
+  .how-it-works-accordion-title {
+    font-size: var(--ao-h2-mobile-size);
+  }
+
+  .how-it-works-accordion-paragraph {
+    font-size: var(--ao-mobile-paragraph);
+  }
+
+  .team_card_title {
+    font-size: var(--ao-h4-mobile-size);
+  }
+
+  .team_card_paragraph {
+    font-size: var(--ao-mobile-paragraph);
+  }
 
 
 }

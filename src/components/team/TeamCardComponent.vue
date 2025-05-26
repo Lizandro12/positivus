@@ -5,11 +5,11 @@
                 <img :src="props._member.image" class="img-fluid" width="80" height="80" alt="Photo" />
             </div>
             <div class="text-start">
-                <h5 class="mb-1">{{ props._member.name }}</h5>
-                <p class="text-muted mb-1">{{ props._member.position }}</p>
+                <h5 class="mb-1 team_card_title">{{ props._member.name }}</h5>
+                <p class="text-muted mb-1 team_card_paragraph">{{ props._member.position }}</p>
             </div>
         </div>
-        <p class="small text-start mt-3">{{ props._member.description }}</p>
+        <p class="small text-start mt-3 team_card_paragraph">{{ props._member.description }}</p>
         <a :href="props._member.linkedin" target="_blank" class="text-dark">
             <img src="/img/linkedin.png" alt="LinkedIn" class="linkedin_icon">
         </a>

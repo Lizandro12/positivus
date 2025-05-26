@@ -31,8 +31,8 @@
             <section>
                 <contact-form-component/>
             </section>
-            <footer-component/>
         </main>
+        <footer-component/>
     </div>
 </template>
 
@@ -48,15 +48,5 @@ import OurTeamComponent from './team/OurTeamComponent.vue';
 import TestimonialsComponent from './testimonials/TestimonialsComponent.vue';
 import ContactFormComponent from './contact/ContactFormComponent.vue'
 import FooterComponent from './footer/FooterComponent.vue';
-
-import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js'
-
-Typebot.initBubble({
-    typebot: "faq-092kq8q",
-    theme: {
-        button: { backgroundColor: "#1D1D1D" },
-        chatWindow: { backgroundColor: "#fff" },
-    },
-});
 
 </script>

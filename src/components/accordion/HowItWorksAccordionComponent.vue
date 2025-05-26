@@ -2,7 +2,7 @@
     <div class="container py-5">
         <div class="d-flex flex-column flex-lg-row align-items-center">
             <h3 class="how-it-works-accordion-title me-0 me-md-5 ">Como funciona</h3>
-            <p>Guia passo a passo para atingir seus objetivos de negócios</p>
+            <p class="how-it-works-accordion-paragraph">Guia passo a passo para atingir seus objetivos de negócios</p>
         </div>
         <div class="row cards">
             <div class="col-12 mt-4 mb-sm-0">
@@ -86,14 +86,6 @@ const toggleAccordion = (info) => {
 
 <style scoped>
 
-.how-it-works-accordion-title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    background-color: #B9FF66;
-    max-width: 300px;
-    border-radius: 12px;
-}
-
 .card {
     border-color: #191A23;
     border-radius: 45px;
@@ -109,7 +101,6 @@ const toggleAccordion = (info) => {
 
 @media (max-width:576px) {
     .how-it-works-accordion-title {
-        font-size: 2.1rem;
         max-width: 250px;
     } 
 

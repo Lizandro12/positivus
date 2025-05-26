@@ -1,10 +1,10 @@
 <template>
     <div class="container py-5">
-        <div class="d-flex flex-column flex-lg-row align-items-center pt-5">
+        <div class="d-flex flex-column flex-lg-row align-items-center pt-5 pb-5">
             <h2 class="title rounded me-0 me-sm-5 cases_studies_title">Casos de Estudo</h2>
             <p class="paragraph text-center text-lg-start">Explore exemplos reais do nosso sucesso comprovado no Marketing Digital através dos nossos Casos de Estudo</p>
         </div>
-        <div class="cases_swipper_container p-4 mt-5">
+        <div class="cases_swipper_container py-4 mt-1">
                     <swiper-container
         :pagination="false"
         :loop="true"
